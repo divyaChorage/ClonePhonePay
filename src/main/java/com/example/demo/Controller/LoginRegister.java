@@ -21,9 +21,10 @@ public class LoginRegister {
 	
 	@Autowired
  PhonePayUserRepo phonepayUserRepo;
-	@Autowired
-	BankUserRepo  bankUserRepo ;
+
 	
+		@Autowired
+	BankUserRepo  bankUserRepo ;
 	@RequestMapping("set{mobile}")
 	public int setPin(@PathVariable long mobile, @RequestBody int pin)
 	{
